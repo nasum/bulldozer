@@ -1,5 +1,6 @@
 require "bulldozer/version"
+require "bulldozer/cli"
 
 module Bulldozer
-  # Your code goes here...
+  Bulldozer::CLI.start
 end
