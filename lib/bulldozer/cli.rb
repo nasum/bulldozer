@@ -1,10 +1,8 @@
-require 'thor'
-
 module Bulldozer
   class CLI < Thor
-    desc "hello NAME", "say hello to NAME"
-    def hello(name)
-      puts "Hello #{name}"
+    desc "start PATH", "create resource"
+    def start(path)
+      Bulldozer::DSL.load({}, path)
     end
   end
 end
